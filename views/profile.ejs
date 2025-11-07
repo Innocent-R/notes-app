@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Notes</title>
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/profile.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Hello, <%= user.local.email %></h1>
+
+    <form action="/addNote" method="POST" class="note-form">
+      <input type="text" name="title" placeholder="Note title" required>
+      <textarea name="content" placeholder="Write your note here..." required></textarea>
+      <button type="submit">Add Note</button>
+    </form>
+
+    <h2>Your Notes:</h2>
+    <div class="notes-list">
+      <% notes.forEach(note => { %>
+        <div class="note-card" data-id="<%= note._id %>">
+          <h3><%= note.title %></h3>
+          <p><%= note.content %></p>
+          <button class="delete-btn">Delete</button>
+        </div>
+      <% }) %>
+    </div>
+
+    <a href="/logout" class="logout-btn">Logout</a>
+  </div>
+</body>
+</html>

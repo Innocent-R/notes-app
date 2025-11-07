@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flash Note</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1>Flash Note App</h1>
+      <% if (message && message.length > 0) { %>
+        <div class="alert"><%= message %></div>
+      <% } %>
+      <p>Login or Signup:</p>
+      <a href="/login" class="btn">Login</a>
+      <a href="/signup" class="btn">Signup</a>
+    </div>
+  </div>
+</body>
+</html>

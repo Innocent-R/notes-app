@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  background: hsl(212, 63%, 91%);
+  color: black;
+  margin: 0;
+  padding: 30px;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+h1 {
+ color: rgb(8, 8, 130);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+
+form button, .btn {
+  background: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover, .btn:hover {
+  background: rgb(64, 238, 64);
+}
+
+.note-card {
+  background: rgb(237, 234, 234);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 15px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.delete-btn {
+  background: rgb(240, 45, 45);
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: rgb(235, 88, 88);
+}
+
+.logout-btn {
+  display: inline-block;
+  margin-top: 20px;
+  color: white;
+  background: rgb(47, 40, 40);
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* chatgpt helped me get some good styling done */
